@@ -14,9 +14,9 @@ jupyter:
 
 install:
 	@uv add jupyterlab-vim jupyterlab-code-formatter ipywidgets black isort
-	@uv add numpy pandas matplotlib seaborn scikit-learn ipympl
-	@uv run jupyter labextension install @jupyter-widgets/jupyterlab-manager
-	@uv run jupyter labextension install jupyter-matplotlib
+	@uv add numpy pandas matplotlib seaborn scikit-learn ipympl tensorflow
+	#@uv run jupyter labextension install @jupyter-widgets/jupyterlab-manager
+	#@uv run jupyter labextension install jupyter-matplotlib
 
 
 render: create_docs_dir
@@ -36,3 +36,4 @@ lint:
 	@uv run black *.py
 
 # uv run quarto create project
+# uv pip install -r pyproject.toml --all-extras

@@ -3,7 +3,7 @@ name = "python-applied-machine-learning"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "black>=25.1.0",
     "ipympl>=0.9.7",
@@ -12,11 +12,12 @@ dependencies = [
     "jupyterlab-code-formatter>=3.0.2",
     "jupyterlab-vim>=4.1.4",
     "matplotlib>=3.10.1",
-    "numpy>=2.2.3",
+    "numpy>=1.26.4",
     "onnx>=1.17.0",
     "onnxruntime>=1.21.0",
     "pandas>=2.2.3",
     "scikit-learn>=1.6.1",
     "seaborn>=0.13.2",
     "skl2onnx>=1.18.0",
+    "tensorflow>=2.14.0",
 ]
