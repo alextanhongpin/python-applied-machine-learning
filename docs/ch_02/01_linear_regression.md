@@ -723,3 +723,14 @@ model.predict(
 ```
 
     array([10.95309995])
+
+``` python
+from skl2onnx import convert_sklearn
+from skl2onnx.common.data_types import FloatTensorType
+
+initial_type = [("float_input", FloatTensorType([None, 3]))]
+onnx = convert_sklearn(model, initial_types=initial_type)
+
+with open("taxi.onnx", "wb") as f:
+    f.write(onnx.SerializeToString())
+```
