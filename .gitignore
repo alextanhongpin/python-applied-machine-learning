@@ -13,3 +13,8 @@ source/
 
 /.quarto/
 .DS_Store
+
+# Source files
+ch_10/Sounds
+ch_10/Spectrograms
+ch_10/Wildlife
